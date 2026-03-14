@@ -12,11 +12,12 @@ API documentation: https://npiregistry.cms.hhs.gov/api-page
 API link: https://npiregistry.cms.hhs.gov/api/?version=2.1
 
 The API returns provier information in JSON format which includes:
--NPI number
--provider status
--practice address
--taxonomy codes
--taxonomy descriptions
+
+- NPI number
+- provider status
+- practice address
+- taxonomy codes
+- taxonomy descriptions
 
 ## NUCC Taxonomy Dataset
 The NUCC taxnoomy dataset is used as a supplemental reference file to map provider taxonomy codes returned by the NPPES API to help standardize classifcations, grouping, and specializations.
@@ -26,11 +27,12 @@ NUCC file used: nucc_taxonomy_251.csv
 NUCC version: Version 25.1, 7/1/25 & 1/1/26
 
 The dataset provides taxonomy data which includes:
--Code
--Grouping
--Classification
--Specialization
--Display Name
+
+- Code
+- Grouping
+- Classification
+- Specialization
+- Display Name
 
 Taxonomy codes returned from API are matched to this dataset to standardize provider classifications.
 
@@ -45,13 +47,15 @@ Incomplete data: Some providers may have incomplete taxonomy or address data, wh
 
 # Future Development
 Possible improvments:
--Expanding queries to include additional zip codes
--Refining provider classification categories
--Linking provider counts with healthcare outcome datasets
--Permorning geographic analysis of provider access
+
+- Expanding queries to include additional zip codes
+- Refining provider classification categories
+- Linking provider counts with healthcare outcome datasets
+- Permorning geographic analysis of provider access
 
 ## How to Run the Project
-1.Open the notebook Code.ipyng in Jupyter Notebook or Google Colab.
-2.Ensure the file 'nucc_taxonomy_251.csv' is available in the project directory.
-3.Install required libraries if needed (ex: pip install pandas requests)
-4.Run the notebook cells in order to retrieve and process the provider data.
+
+1. Open the notebook Code.ipyng in Jupyter Notebook or Google Colab.
+2. Ensure the file 'nucc_taxonomy_251.csv' is available in the project directory.
+3. Install required libraries if needed (ex: pip install pandas requests)
+4. Run the notebook cells in order to retrieve and process the provider data.
